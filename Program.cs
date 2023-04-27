@@ -86,7 +86,7 @@
 
 
                     // Можно ли добавлять отпуск?
-                    if (CheckVacation(AllVacations, VacationsEmployee, CurrentVacationEmployee, startDate, endDate) == true)
+                    if (CheckVacation(AllVacations, VacationsEmployee, startDate, endDate) == true)
                     {
                         VacationsEmployee.AddRange(CurrentVacationEmployee);
                         AllVacations.AddRange(CurrentVacationEmployee);
@@ -132,7 +132,7 @@
 
 
         // Проверка отпуска на условие
-        static bool CheckVacation(List<DateTime> AllVacations, List<DateTime> VacationsEmployee, List<DateTime> CurrentVacationEmployee, DateTime startDate, DateTime endDate)
+        static bool CheckVacation(List<DateTime> AllVacations, List<DateTime> VacationsEmployee, DateTime startDate, DateTime endDate)
         {
             // Существует ли отпуск с такой датой начала и конца
             bool existStart = false;
