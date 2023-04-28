@@ -138,6 +138,7 @@
             bool existStart = false;
             bool existEnd = false;
 
+            // Существуют ли свободные даты в списке всех отпусков для текущего отпуска
             if (AllVacations.Any(element => element >= startDate && element <= endDate) != true)
             {
                 // Интервал между отпусками всех сотрудников - 3 дня
